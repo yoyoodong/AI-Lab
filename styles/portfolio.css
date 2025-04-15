@@ -63,13 +63,15 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: var(--space-lg);
+    position: relative;
+    min-height: 400px;
 }
 
 .portfolio-item {
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     box-shadow: var(--box-shadow-sm);
-    transition: var(--transition-normal);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
     animation: fadeIn 0.8s ease-out both;
 }
 
