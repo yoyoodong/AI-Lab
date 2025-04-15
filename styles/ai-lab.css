@@ -1,0 +1,288 @@
+/**
+ * YoyooAI - AI实验室页面样式
+ */
+
+/* 页面头部 */
+.page-header {
+    padding: var(--space-xl) 0;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(0, 102, 255, 0.05) 0%, rgba(255, 55, 95, 0.05) 100%);
+}
+
+.page-header h1 {
+    margin-bottom: var(--space-sm);
+}
+
+.page-header .subtitle {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color-gray-600);
+    font-size: 1.25rem;
+}
+
+/* 实验室介绍区 */
+.lab-intro {
+    padding: var(--space-lg) 0;
+}
+
+.lab-intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    align-items: center;
+}
+
+.lab-intro-text h2 {
+    margin-bottom: var(--space-md);
+}
+
+.lab-intro-text p {
+    margin-bottom: var(--space-sm);
+    line-height: 1.8;
+}
+
+.lab-intro-visual {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--box-shadow-md);
+}
+
+/* 实验项目区 */
+.lab-projects {
+    padding: var(--space-xl) 0;
+    background-color: var(--color-gray-100);
+}
+
+.section-description {
+    text-align: center;
+    max-width: 700px;
+    margin: -1rem auto var(--space-lg);
+    color: var(--color-gray-600);
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--space-md);
+}
+
+.lab-project-card {
+    position: relative;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--box-shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.lab-project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-md);
+}
+
+.project-status {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-light);
+    z-index: 2;
+}
+
+.project-status.new {
+    background-color: var(--color-secondary);
+}
+
+.project-status.ongoing {
+    background-color: #FF9F0A; /* 橙色 */
+}
+
+.project-status.completed {
+    background-color: #32D74B; /* 绿色 */
+}
+
+.project-preview {
+    height: 200px;
+    width: 100%;
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+}
+
+.project-content {
+    padding: var(--space-md);
+}
+
+.project-content h3 {
+    margin-bottom: var(--space-xs);
+}
+
+.project-content p {
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-sm);
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.project-link {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* AIGC工具区 */
+.aigc-tools {
+    padding: var(--space-xl) 0;
+}
+
+.tools-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-md);
+}
+
+.tool-card {
+    background-color: var(--color-light);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-md);
+    box-shadow: var(--box-shadow-sm);
+    border: 1px solid var(--color-gray-200);
+    transition: var(--transition-normal);
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-md);
+}
+
+.tool-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-xs);
+}
+
+.tool-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-light);
+}
+
+.tool-badge.prototype {
+    background-color: var(--color-gray-500);
+}
+
+.tool-badge.beta {
+    background-color: #0066FF;
+}
+
+.tool-badge.new {
+    background-color: #FF375F;
+}
+
+.tool-description {
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-sm);
+    min-height: 3rem;
+}
+
+.tool-preview {
+    width: 100%;
+    height: 160px;
+    margin-bottom: var(--space-sm);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+}
+
+.tool-button {
+    display: inline-block;
+    width: 100%;
+    padding: 0.75rem 0;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    text-align: center;
+    border-radius: var(--border-radius-md);
+    font-weight: 500;
+    transition: var(--transition-normal);
+}
+
+.tool-button:hover {
+    background-color: #0055cc; /* 深一点的蓝色 */
+    transform: translateY(-2px);
+}
+
+/* 加入实验区域 */
+.join-lab {
+    padding: var(--space-xl) 0;
+    background-color: var(--color-gray-100);
+}
+
+.join-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    align-items: center;
+}
+
+.join-text h2 {
+    margin-bottom: var(--space-md);
+}
+
+.join-text p {
+    margin-bottom: var(--space-md);
+    line-height: 1.8;
+}
+
+.join-visual {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--box-shadow-md);
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) {
+    .lab-intro-content,
+    .join-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .lab-intro-visual,
+    .join-visual {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-cards,
+    .tools-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 动画效果 */
+.lab-project-card {
+    animation: fadeIn 1s ease-out;
+}
+
+.tool-card:nth-child(1) {
+    animation: fadeIn 1s ease-out 0.2s both;
+}
+
+.tool-card:nth-child(2) {
+    animation: fadeIn 1s ease-out 0.4s both;
+}
+
+.tool-card:nth-child(3) {
+    animation: fadeIn 1s ease-out 0.6s both;
+} 

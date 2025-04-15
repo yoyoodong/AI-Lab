@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 - YoyooAI</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="YoyooAI作品集 - 展示设计与AI融合的创意作品">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="10" fill="#000"/>
+                    <path d="M10 20C10 14.4772 14.4772 10 20 10C25.5228 10 30 14.4772 30 20C30 25.5228 25.5228 30 20 30" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M20 20L26 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="20" cy="20" r="2" fill="#FF375F"/>
+                </svg>
+                <span>YoyooAI</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="portfolio.html" class="active">作品集</a></li>
+                    <li><a href="ai-lab.html">AI实验室</a></li>
+                    <li><a href="blog.html">设计博客</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 页面标题区域 -->
+        <section class="page-header">
+            <div class="container">
+                <h1>作品集</h1>
+                <p class="subtitle">精选设计与AI交叉领域的代表性项目</p>
+            </div>
+        </section>
+
+        <!-- 作品分类筛选 -->
+        <section class="portfolio-filter">
+            <div class="container">
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="uiux">UI/UX设计</button>
+                    <button class="filter-btn" data-filter="ai">AI应用</button>
+                    <button class="filter-btn" data-filter="generative">生成式设计</button>
+                    <button class="filter-btn" data-filter="interactive">交互体验</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品展示 -->
+        <section class="portfolio-showcase">
+            <div class="container">
+                <div class="portfolio-grid">
+                    <!-- 作品1 -->
+                    <div class="portfolio-item" data-category="uiux ai">
+                        <div class="portfolio-thumbnail">
+                            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="8" fill="#f0f0f0" />
+                                <rect x="50" y="50" width="300" height="200" rx="8" stroke="#000" stroke-width="2" />
+                                <circle cx="200" cy="150" r="50" fill="#0066FF" fill-opacity="0.3" stroke="#0066FF" stroke-width="2" />
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-categories">
+                                    <span class="category">UI/UX设计</span>
+                                    <span class="category">AI应用</span>
+                                </div>
+                                <a href="#" class="portfolio-btn">查看项目</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>智能健康数据可视化平台</h3>
+                            <p>结合医疗数据分析与直观的用户界面设计，为用户提供个性化健康状况可视化</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品2 -->
+                    <div class="portfolio-item" data-category="generative interactive">
+                        <div class="portfolio-thumbnail">
+                            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="8" fill="#f0f0f0" />
+                                <path d="M100 150C100 150 150 100 200 100C250 100 300 150 300 150C300 150 250 200 200 200C150 200 100 150 100 150Z" stroke="#FF375F" stroke-width="2" fill="none" />
+                                <circle cx="200" cy="150" r="40" stroke="#000" stroke-width="2" fill="none" />
+                                <circle cx="200" cy="150" r="10" fill="#000" />
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-categories">
+                                    <span class="category">生成式设计</span>
+                                    <span class="category">交互体验</span>
+                                </div>
+                                <a href="#" class="portfolio-btn">查看项目</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>声音驱动的视觉生成系统</h3>
+                            <p>通过声音输入实时生成动态视觉效果，将听觉体验转化为个性化艺术表达</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品3 -->
+                    <div class="portfolio-item" data-category="ai uiux">
+                        <div class="portfolio-thumbnail">
+                            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="8" fill="#f0f0f0" />
+                                <rect x="70" y="70" width="260" height="160" rx="8" fill="#FFFFFF" stroke="#000" stroke-width="1" />
+                                <rect x="90" y="90" width="80" height="120" rx="4" stroke="#0066FF" stroke-width="2" />
+                                <rect x="190" y="90" width="120" height="50" rx="4" stroke="#000" stroke-width="1" />
+                                <rect x="190" y="160" width="120" height="50" rx="4" stroke="#000" stroke-width="1" />
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-categories">
+                                    <span class="category">AI应用</span>
+                                    <span class="category">UI/UX设计</span>
+                                </div>
+                                <a href="#" class="portfolio-btn">查看项目</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>智能个人助理界面系统</h3>
+                            <p>基于用户行为分析设计的自适应界面，结合AI预测技术提供情境感知的交互体验</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品4 -->
+                    <div class="portfolio-item" data-category="generative">
+                        <div class="portfolio-thumbnail">
+                            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="8" fill="#f0f0f0" />
+                                <path d="M100 220L130 180L160 200L190 150L220 170L250 120L280 150L310 100" stroke="#FF375F" stroke-width="2" />
+                                <path d="M100 170L130 190L160 160L190 200L220 150L250 180L280 130L310 160" stroke="#0066FF" stroke-width="2" />
+                                <circle cx="130" cy="180" r="4" fill="#FF375F" />
+                                <circle cx="160" cy="200" r="4" fill="#FF375F" />
+                                <circle cx="190" cy="150" r="4" fill="#FF375F" />
+                                <circle cx="220" cy="170" r="4" fill="#FF375F" />
+                                <circle cx="250" cy="120" r="4" fill="#FF375F" />
+                                <circle cx="280" cy="150" r="4" fill="#FF375F" />
+                                <circle cx="310" cy="100" r="4" fill="#FF375F" />
+                                <circle cx="130" cy="190" r="4" fill="#0066FF" />
+                                <circle cx="160" cy="160" r="4" fill="#0066FF" />
+                                <circle cx="190" cy="200" r="4" fill="#0066FF" />
+                                <circle cx="220" cy="150" r="4" fill="#0066FF" />
+                                <circle cx="250" cy="180" r="4" fill="#0066FF" />
+                                <circle cx="280" cy="130" r="4" fill="#0066FF" />
+                                <circle cx="310" cy="160" r="4" fill="#0066FF" />
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-categories">
+                                    <span class="category">生成式设计</span>
+                                </div>
+                                <a href="#" class="portfolio-btn">查看项目</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>数据驱动的生成艺术系统</h3>
+                            <p>将复杂数据集转化为美学视觉表达，探索数据可视化与艺术创作的边界</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品5 -->
+                    <div class="portfolio-item" data-category="interactive ai">
+                        <div class="portfolio-thumbnail">
+                            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="8" fill="#f0f0f0" />
+                                <rect x="100" y="100" width="200" height="100" rx="50" fill="#FFFFFF" stroke="#000" stroke-width="2" />
+                                <circle cx="150" cy="150" r="20" fill="#FF375F" />
+                                <circle cx="250" cy="150" r="20" fill="#0066FF" />
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-categories">
+                                    <span class="category">交互体验</span>
+                                    <span class="category">AI应用</span>
+                                </div>
+                                <a href="#" class="portfolio-btn">查看项目</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>情感识别交互界面</h3>
+                            <p>基于表情和语音分析的情感识别系统，根据用户情绪调整界面风格与交互方式</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品6 -->
+                    <div class="portfolio-item" data-category="uiux interactive">
+                        <div class="portfolio-thumbnail">
+                            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="8" fill="#f0f0f0" />
+                                <rect x="80" y="50" width="240" height="200" rx="8" fill="#FFFFFF" stroke="#000" stroke-width="1" />
+                                <circle cx="140" cy="120" r="30" stroke="#FF375F" stroke-width="2" fill="none" />
+                                <circle cx="260" cy="120" r="30" stroke="#0066FF" stroke-width="2" fill="none" />
+                                <rect x="120" y="180" width="160" height="40" rx="20" fill="#F5F5F7" />
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-categories">
+                                    <span class="category">UI/UX设计</span>
+                                    <span class="category">交互体验</span>
+                                </div>
+                                <a href="#" class="portfolio-btn">查看项目</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>无障碍设计系统</h3>
+                            <p>专为多样化需求用户设计的包容性界面体系，结合声音控制与手势识别提升可访问性</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 与我合作 -->
+        <section class="collaboration">
+            <div class="container">
+                <div class="collab-content">
+                    <h2>对项目感兴趣？</h2>
+                    <p>我热衷于探索设计与技术的创新边界，如果您有合作意向或项目需求，欢迎联系。</p>
+                    <a href="mailto:contact@yoyooai.com" class="btn primary">联系我</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="10" fill="#333"/>
+                            <path d="M10 20C10 14.4772 14.4772 10 20 10C25.5228 10 30 14.4772 30 20C30 25.5228 25.5228 30 20 30" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 20L26 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="20" cy="20" r="2" fill="#FF375F"/>
+                        </svg>
+                        <span>YoyooAI</span>
+                    </div>
+                    <p class="footer-description">探索设计与AI的跨界融合，展示创意案例与实验成果</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 22.0268V19.1568C16.0375 18.68 15.9731 18.2006 15.811 17.7506C15.6489 17.3006 15.3929 16.8902 15.06 16.5468C18.2 16.1968 21.5 15.0068 21.5 9.54679C21.4997 8.15062 20.9627 6.80799 20 5.79679C20.4558 4.5753 20.4236 3.22514 19.91 2.02679C19.91 2.02679 18.73 1.67679 16 3.50679C13.708 2.88561 11.292 2.88561 8.99999 3.50679C6.26999 1.67679 5.08999 2.02679 5.08999 2.02679C4.57636 3.22514 4.54413 4.5753 4.99999 5.79679C4.03011 6.81549 3.49251 8.17026 3.49999 9.57679C3.49999 14.9968 6.79998 16.1868 9.93998 16.5768C9.61098 16.9168 9.35725 17.3222 9.19529 17.7667C9.03334 18.2112 8.96679 18.6849 8.99999 19.1568V22.0268" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 20.0267C6 20.9999 3.5 20.0267 2 17.0267" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>导航</h3>
+                        <ul>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="portfolio.html">作品集</a></li>
+                            <li><a href="ai-lab.html">AI实验室</a></li>
+                            <li><a href="blog.html">设计博客</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>联系我</h3>
+                        <ul>
+                            <li><a href="mailto:contact@yoyooai.com">contact@yoyooai.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 YoyooAI. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/portfolio.js"></script>
+</body>
+</html> 
