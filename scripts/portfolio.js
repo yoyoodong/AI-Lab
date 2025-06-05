@@ -146,9 +146,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const portfolioBtns = document.querySelectorAll('.portfolio-btn');
     portfolioBtns.forEach(btn => {
         btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            // 这里可以添加打开详情页的逻辑
-            alert('作品详情页开发中，敬请期待！');
+            // 仅处理href="#"的链接
+            if (this.getAttribute('href') === '#') {
+                e.preventDefault();
+                // 这里可以添加打开详情页的逻辑
+                alert('作品详情页开发中，敬请期待！');
+            }
+            // 对于其他链接，使用默认行为（正常导航）
         });
     });
 }); 
