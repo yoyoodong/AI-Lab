@@ -493,4 +493,70 @@
 
 .download-btn:hover {
     background-color: #333;
+}
+
+/* 语音交互设计规范助手模态框样式 */
+.vui-assistant-details {
+    padding: var(--space-md);
+}
+
+.vui-assistant-details h4 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+    color: var(--color-dark);
+}
+
+.vui-assistant-details p {
+    margin-bottom: var(--space-sm);
+    line-height: 1.8;
+    color: var(--color-gray-700);
+}
+
+.vui-assistant-details ul {
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-md);
+}
+
+.vui-assistant-details li {
+    margin-bottom: var(--space-xs);
+    line-height: 1.6;
+    color: var(--color-gray-700);
+}
+
+.vui-assistant-action {
+    margin-top: var(--space-md);
+    text-align: center;
+}
+
+.vui-assistant-action .btn {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    transition: var(--transition-normal);
+}
+
+.vui-assistant-action .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 102, 255, 0.2);
+}
+
+/* 修改模态框默认样式 */
+#vui-modal {
+    display: none;
+}
+
+#vui-modal .modal-content {
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .vui-assistant-details {
+        padding: var(--space-sm);
+    }
+    
+    #vui-modal .modal-content {
+        width: 90%;
+        max-width: none;
+    }
 } 

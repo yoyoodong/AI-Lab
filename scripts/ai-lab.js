@@ -4,7 +4,31 @@
  * @description 实现AI实验室页面的工具演示、项目展示和交互功能
  */
 
+// 语音交互设计规范助手模态框控制函数
+function openVuiModal(event) {
+    event.preventDefault();
+    const modal = document.getElementById('vui-modal');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // 防止背景滚动
+}
+
+function closeVuiModal() {
+    const modal = document.getElementById('vui-modal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // 恢复背景滚动
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+    // 添加点击模态框背景关闭功能
+    const vuiModal = document.getElementById('vui-modal');
+    if (vuiModal) {
+        vuiModal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeVuiModal();
+            }
+        });
+    }
+
     // 工具卡片交互效果
     const toolCards = document.querySelectorAll('.tool-card');
     
