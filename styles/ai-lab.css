@@ -718,19 +718,20 @@
     background: rgba(255, 55, 95, 0.02);
 }
 
-/* 简化的研究卡片样式 */
+/* 统一的研究卡片样式 */
 .research-card {
     background: white;
     padding: var(--space-lg);
     border-radius: var(--border-radius-lg);
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: none; /* 默认无投影 */
     transition: var(--transition-normal);
 }
 
 .research-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--box-shadow-md);
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow-md); /* 只在hover时显示投影 */
 }
 
 .research-icon {
@@ -775,19 +776,20 @@
     transform: translateX(3px);
 }
 
-/* 简化的项目卡片样式 */
+/* 统一的项目卡片样式 */
 .project-card {
     background: white;
     padding: var(--space-md);
     border-radius: var(--border-radius-lg);
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: none; /* 默认无投影 */
     transition: var(--transition-normal);
 }
 
 .project-card:hover {
     transform: translateY(-3px);
-    box-shadow: var(--box-shadow-sm);
+    box-shadow: var(--box-shadow-md); /* 统一hover投影 */
 }
 
 .project-card .project-icon {
@@ -815,4 +817,133 @@
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: 500;
+}
+
+/* 技术趋势洞察板块 */
+.insights-section {
+    padding: var(--space-xl) 0;
+    background: rgba(255, 55, 95, 0.02);
+}
+
+.insights-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.insight-item {
+    background: white;
+    padding: var(--space-lg);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: none; /* 默认无投影 */
+    transition: var(--transition-normal);
+}
+
+.insight-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow-md); /* 统一hover投影 */
+}
+
+.insight-meta {
+    display: flex;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.insight-tag {
+    background: rgba(0, 102, 255, 0.1);
+    color: var(--color-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--border-radius);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.insight-date {
+    color: var(--color-gray-500);
+    font-size: 0.75rem;
+}
+
+.insight-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+}
+
+.insight-description {
+    color: var(--color-gray-600);
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+}
+
+.insight-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: var(--transition-fast);
+}
+
+.insight-link::after {
+    content: '→';
+    margin-left: 0.5rem;
+    transition: var(--transition-fast);
+}
+
+.insight-link:hover {
+    text-decoration: underline;
+}
+
+.insight-link:hover::after {
+    transform: translateX(3px);
+}
+
+/* 调整Hero区域高度和间距 */
+.research-hero,
+.about-hero {
+    padding: var(--space-xl) 0; /* 减少padding */
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(255, 55, 95, 0.05));
+}
+
+.hero-title {
+    font-size: 3.5rem; /* 与关于页面一致 */
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+    color: #000000; /* 改为黑色 */
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem; /* 与关于页面一致 */
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-xl);
+    line-height: 1.6;
+}
+
+/* 调整section间距 */
+.core-research,
+.experimental-projects {
+    padding: var(--space-xl) 0;
+}
+
+.work-methods,
+.contact-me {
+    padding: var(--space-xxl) 0; /* 增大关于玩家页面section间距 */
+}
+
+.core-philosophy {
+    padding: var(--space-xl) 0;
+    margin-bottom: var(--space-lg); /* 与下方section拉开距离 */
+}
+
+/* 统一卡片标题大小 */
+.research-card h3,
+.project-card h3,
+.philosophy-card h3,
+.contact-card h3 {
+    font-size: 1.25rem !important; /* 调大与关于玩家页面一致 */
 } 

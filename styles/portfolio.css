@@ -243,10 +243,7 @@
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: var(--space-sm);
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #000000; /* 改为黑色 */
 }
 
 .hero-subtitle {
@@ -295,14 +292,15 @@
     background-color: var(--color-light);
     padding: var(--space-md);
     border-radius: var(--border-radius-lg);
-    box-shadow: var(--box-shadow-sm);
+    box-shadow: none; /* 默认无投影 */
     transition: var(--transition-normal);
     text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .philosophy-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--box-shadow-md);
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow-md); /* 统一hover投影 */
 }
 
 .card-icon {
@@ -564,12 +562,13 @@
     border-radius: var(--border-radius-lg);
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: none; /* 默认无投影 */
     transition: var(--transition-normal);
 }
 
 .contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--box-shadow-md);
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow-md); /* 统一hover投影 */
 }
 
 .contact-icon {
@@ -617,4 +616,119 @@
 .contact-links a:hover {
     background: rgba(0, 102, 255, 0.2);
     text-decoration: none;
+}
+
+/* 微信二维码占位图样式 */
+.wechat-qr-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.qr-placeholder {
+    margin-bottom: var(--space-xs);
+}
+
+.qr-hint {
+    color: var(--color-gray-600);
+    font-size: 0.75rem;
+}
+
+/* 时间线样式 */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--color-primary);
+    top: 0;
+    bottom: 0;
+    left: 30px;
+}
+
+.timeline-item {
+    padding: var(--space-lg) 0;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* 添加分割线 */
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+.timeline-marker {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-primary);
+    border: 3px solid white;
+    border-radius: 50%;
+    left: 23px;
+    top: 30px;
+    box-shadow: 0 0 0 3px var(--color-primary);
+}
+
+.timeline-content {
+    padding: var(--space-md);
+    background-color: white;
+    position: relative;
+    border-radius: 8px;
+    margin-left: 60px;
+    box-shadow: none; /* 移除默认投影 */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition-normal);
+}
+
+.timeline-content:hover {
+    box-shadow: var(--box-shadow-md); /* 只在hover时显示投影 */
+    transform: translateY(-2px);
+}
+
+.timeline-period {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.8rem; /* 调小时间文字 */
+    margin-bottom: 8px;
+}
+
+.timeline-content h3 {
+    margin-bottom: 10px;
+    color: var(--color-dark);
+    font-size: 1.1rem; /* 调小标题文字 */
+}
+
+.timeline-content p {
+    color: var(--color-gray-600); /* 描述性文字为灰色 */
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 0.9rem; /* 调小描述文字 */
+}
+
+.achievement-list {
+    list-style: none;
+    padding: 0;
+}
+
+.achievement-list li {
+    padding: 3px 0;
+    position: relative;
+    padding-left: 20px;
+    color: var(--color-gray-600); /* 成就列表为灰色 */
+    font-size: 0.85rem; /* 调小列表文字 */
+}
+
+.achievement-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
 }

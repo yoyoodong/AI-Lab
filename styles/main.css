@@ -362,6 +362,7 @@ img, svg {
     font-weight: 300;
     font-size: 0.8em;
     margin: 0 0.2em;
+    color: #000000; /* 改为黑色 */
     opacity: 0.6;
 }
 
@@ -484,6 +485,7 @@ img, svg {
 
 .post-title {
     margin-bottom: var(--space-xs);
+    font-size: 1.125rem; /* 与其他卡片标题一致 */
 }
 
 .post-excerpt {

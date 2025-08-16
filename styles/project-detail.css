@@ -538,4 +538,52 @@ body {
     .gallery-image {
         height: 80px;
     }
+}
+
+/* 项目图片展示样式 */
+.project-image {
+    padding: var(--space-xl) 0;
+}
+
+.image-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--box-shadow-lg);
+    transition: var(--transition-normal);
+}
+
+.main-image:hover {
+    transform: scale(1.02);
+    box-shadow: var(--box-shadow-xl);
+}
+
+/* 项目导航按钮 */
+.project-navigation {
+    padding: var(--space-xl) 0;
+    background: rgba(0, 102, 255, 0.02);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .nav-buttons {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .image-container {
+        padding: 0 var(--space-md);
+    }
 } 
