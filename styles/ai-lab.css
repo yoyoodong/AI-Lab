@@ -702,6 +702,7 @@
 
 /* 统一的研究卡片样式 */
 .research-card {
+    position: relative; /* 确保状态标签正确定位 */
     background: white;
     padding: var(--space-lg);
     border-radius: var(--border-radius-lg);
@@ -723,7 +724,6 @@
 }
 
 .research-card h3 {
-    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: var(--space-sm);
     color: var(--color-text);
@@ -889,6 +889,7 @@
 .about-hero {
     padding: var(--space-xl) 0; /* 减少padding */
     background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(255, 55, 95, 0.05));
+    text-align: center; /* 确保标题居中显示 */
 }
 
 .hero-title {
@@ -935,5 +936,5 @@
 .project-card h3,
 .philosophy-card h3,
 .contact-card h3 {
-    font-size: 1.25rem !important; /* 调大与关于玩家页面一致 */
+    font-size: 1.125rem !important; /* 统一为更小的字体大小 */
 } 
