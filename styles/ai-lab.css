@@ -716,4 +716,103 @@
 /* 持续学习区域 */
 .continuous-learning {
     background: rgba(255, 55, 95, 0.02);
+}
+
+/* 简化的研究卡片样式 */
+.research-card {
+    background: white;
+    padding: var(--space-lg);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition-normal);
+}
+
+.research-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-md);
+}
+
+.research-icon {
+    margin-bottom: var(--space-md);
+    display: flex;
+    justify-content: center;
+}
+
+.research-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--color-text);
+}
+
+.research-card p {
+    color: var(--color-gray-600);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+}
+
+.research-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: var(--transition-fast);
+}
+
+.research-link::after {
+    content: '→';
+    margin-left: 0.5rem;
+    transition: var(--transition-fast);
+}
+
+.research-link:hover {
+    text-decoration: underline;
+}
+
+.research-link:hover::after {
+    transform: translateX(3px);
+}
+
+/* 简化的项目卡片样式 */
+.project-card {
+    background: white;
+    padding: var(--space-md);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition-normal);
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow-sm);
+}
+
+.project-card .project-icon {
+    margin-bottom: var(--space-sm);
+    display: flex;
+    justify-content: center;
+}
+
+.project-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    color: var(--color-text);
+}
+
+.project-card p {
+    color: var(--color-gray-600);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: var(--space-sm);
+}
+
+.project-card .project-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
 } 
