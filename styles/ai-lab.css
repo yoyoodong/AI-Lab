@@ -932,12 +932,19 @@
 
 .work-methods,
 .contact-me {
-    padding: var(--space-xxl) 0; /* 增大关于玩家页面section间距 */
+    padding: var(--space-xl) 0; /* 与灵感实验室一致 */
+    margin-top: var(--space-xxl); /* 与上方内容拉开更大距离 */
 }
 
 .core-philosophy {
     padding: var(--space-xl) 0;
+    margin-top: var(--space-xxl); /* 与上方内容拉开更大距离 */
     margin-bottom: var(--space-lg); /* 与下方section拉开距离 */
+}
+
+.career-journey {
+    padding: var(--space-xl) 0; /* 新增设计经验section样式 */
+    margin-top: var(--space-xxl);
 }
 
 /* 统一卡片标题大小 */
