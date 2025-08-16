@@ -113,7 +113,6 @@ img, svg {
 }
 
 .section-title {
-    text-align: center;
     margin-bottom: var(--space-lg);
     position: relative;
 }
@@ -378,6 +377,7 @@ img, svg {
 
 .feature-card h3 {
     margin-bottom: var(--space-xs);
+    font-size: 1rem; /* 比核心作品预览卡片标题小2号 */
 }
 
 .feature-card-link {
