@@ -4,6 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     initPortfolioFilter();
+    handleURLFilter();
 });
 
 /**
@@ -155,4 +156,55 @@ document.addEventListener('DOMContentLoaded', function() {
             // 对于其他链接，使用默认行为（正常导航）
         });
     });
-}); 
+});
+
+/**
+ * 处理URL参数，自动筛选对应分类
+ */
+function handleURLFilter() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterParam = urlParams.get('filter');
+    
+    if (filterParam) {
+        // 找到对应的筛选按钮
+        const targetButton = document.querySelector(`[data-filter="${filterParam}"]`);
+        
+        if (targetButton) {
+            // 移除所有按钮的active类
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // 激活目标按钮
+            targetButton.classList.add('active');
+            
+            // 执行筛选
+            filterPortfolioItems(filterParam);
+        }
+    }
+    
+    /**
+     * 根据选择的筛选类别过滤作品项目（复用函数）
+     * @param {string} category - 筛选类别
+     */
+    function filterPortfolioItems(category) {
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        
+        portfolioItems.forEach(item => {
+            const itemCategories = item.getAttribute('data-category').split(' ');
+            
+            // 如果选择"全部"或项目包含所选类别，则显示项目
+            if (category === 'all' || itemCategories.includes(category)) {
+                item.classList.remove('hidden');
+                item.classList.add('visible');
+                
+                // 添加动画延迟以创建交错效果
+                const itemIndex = Array.from(portfolioItems).indexOf(item);
+                item.style.animationDelay = `${0.1 * itemIndex}s`;
+            } else {
+                item.classList.remove('visible');
+                item.classList.add('hidden');
+            }
+        });
+    }
+}

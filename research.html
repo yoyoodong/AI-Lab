@@ -25,63 +25,52 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="portfolio.html">核心作品集</a></li>
-                    <li><a href="research.html" class="active">我的研究与探索</a></li>
-                    <li><a href="about.html">关于我</a></li>
+                    <li><a href="index.html">START</a></li>
+                    <li><a href="portfolio.html">价值创造</a></li>
+                    <li><a href="research.html" class="active">灵感实验室</a></li>
+                    <li><a href="about.html">关于玩家</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- 页面标题区域 -->
-        <section class="page-header">
+        <!-- 页面Hero区域 -->
+        <section class="research-hero">
             <div class="container">
-                <h1>我的研究与探索</h1>
-                <p class="subtitle">展示终身学习思想与前瞻性技术探索，记录从概念到落地的完整历程</p>
-            </div>
-        </section>
-
-        <!-- 研究介绍 -->
-        <section class="lab-intro">
-            <div class="container">
-                <div class="lab-intro-content">
-                    <div class="lab-intro-text">
-                        <h2>关于我的研究</h2>
-                        <p>这里是我探索设计与技术交叉领域的思考空间。每个项目都体现了主动学习和创新落地的能力，从AI辅助设计工具到VUI设计规范，从概念验证到实际应用。</p>
-                        <p>我相信设计师应该具备前瞻性思维，主动拥抱新技术，将抽象研究转化为实用工具，为团队和行业创造杠杆价值。</p>
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-text">灵感实验室</span>
                     </div>
-                    <div class="lab-intro-visual">
-                        <svg width="100%" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="250" rx="16" fill="#f5f5f7" />
-                            <!-- 研究网络图 -->
-                            <circle cx="120" cy="80" r="25" stroke="#FF375F" stroke-width="2" fill="none" />
-                            <circle cx="280" cy="80" r="25" stroke="#0066FF" stroke-width="2" fill="none" />
-                            <circle cx="200" cy="170" r="25" stroke="#000" stroke-width="2" fill="none" />
-                            <circle cx="120" cy="170" r="20" stroke="#FF375F" stroke-width="1" fill="none" />
-                            <circle cx="280" cy="170" r="20" stroke="#0066FF" stroke-width="1" fill="none" />
-                            <!-- 连接线 -->
-                            <path d="M145 80L255 80" stroke="#FF375F" stroke-width="2" />
-                            <path d="M135 95L185 155" stroke="#0066FF" stroke-width="2" />
-                            <path d="M265 95L215 155" stroke="#000" stroke-width="2" />
-                            <path d="M140 170L180 170" stroke="#FF375F" stroke-width="1" />
-                            <path d="M220 170L260 170" stroke="#0066FF" stroke-width="1" />
-                            <!-- 核心节点 -->
-                            <circle cx="120" cy="80" r="8" fill="#FF375F" />
-                            <circle cx="280" cy="80" r="8" fill="#0066FF" />
-                            <circle cx="200" cy="170" r="8" fill="#000" />
-                        </svg>
+                    <h1 class="hero-title">我的研究 <span class="x-symbol">×</span> 探索</h1>
+                    <p class="hero-subtitle">我相信，最好的成长发生在持续学习与动手实践之中。这里记录着我的好奇心、我的实验，以及我将前沿技术转化为设计价值的思考。</p>
+                    
+                    <div class="research-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">重点研究项目</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">实验性项目</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">探索精神</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 研究项目 -->
-        <section class="lab-projects">
+        <!-- 核心研究 -->
+        <section class="core-research">
             <div class="container">
-                <h2 class="section-title">研究项目</h2>
-                <div class="project-cards">
+                <div class="section-header">
+                    <h2 class="section-title">核心研究项目</h2>
+                    <p class="section-description">前瞻性技术探索与实用工具开发</p>
+                </div>
+                <div class="research-grid">
                     <!-- OmniVoice项目 -->
                     <div class="lab-project-card" id="omnivoice-project">
                         <div class="project-status featured">重点项目</div>
@@ -312,11 +301,13 @@
             </div>
         </section>
 
-        <!-- 学习笔记与思考 -->
-        <section class="research-blog">
+        <!-- 持续学习 -->
+        <section class="continuous-learning">
             <div class="container">
-                <h2 class="section-title">学习笔记与思考</h2>
-                <p class="section-description">记录学习过程中的思考与收获，分享跨界探索的经验</p>
+                <div class="section-header">
+                    <h2 class="section-title">持续学习</h2>
+                    <p class="section-description">技术趋势洞察与设计思考记录</p>
+                </div>
                 
                 <div class="blog-posts">
                     <article class="blog-post-card">
@@ -352,13 +343,14 @@
             </div>
         </section>
 
-        <!-- 个人项目实验 -->
-        <section class="side-projects">
+        <!-- 实验性项目 -->
+        <section class="experimental-projects">
             <div class="container">
-                <h2 class="section-title">个人项目实验</h2>
-                <p class="section-description">好奇心驱动的技术探索与生活洞察，展示执行力与学习热情</p>
-                
-                <div class="side-projects-grid">
+                <div class="section-header">
+                    <h2 class="section-title">实验性项目</h2>
+                    <p class="section-description">好奇心驱动的小型工具与概念验证</p>
+                </div>
+                <div class="projects-grid">
                     <div class="side-project-card">
                         <div class="project-icon">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -434,7 +426,7 @@
                     <div class="learning-text">
                         <h2>持续学习，拥抱变化</h2>
                         <p>技术在快速发展，设计师需要保持学习的热情和前瞻的视野。我始终相信，最好的设计师不仅要精通当下的工具，更要主动探索未来的可能性。</p>
-                        <p>这些个人项目是我好奇心、技术热情和执行力的最佳证明，让我的形象更加丰满立体。</p>
+
                         <a href="about.html" class="btn primary">了解更多关于我</a>
                     </div>
                     <div class="learning-visual">
@@ -476,10 +468,10 @@
                     <div class="footer-links-column">
                         <h3>导航</h3>
                         <ul>
-                            <li><a href="index.html">首页</a></li>
-                            <li><a href="portfolio.html">核心作品集</a></li>
-                            <li><a href="research.html">我的研究与探索</a></li>
-                            <li><a href="about.html">关于我</a></li>
+                            <li><a href="index.html">START</a></li>
+                            <li><a href="portfolio.html">价值创造</a></li>
+                            <li><a href="research.html">灵感实验室</a></li>
+                            <li><a href="about.html">关于玩家</a></li>
                         </ul>
                     </div>
                     <div class="footer-links-column">

@@ -133,10 +133,43 @@
 .project-link {
     color: var(--color-primary);
     font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: var(--transition-fast);
+}
+
+.project-link::after {
+    content: '→';
+    margin-left: 0.5rem;
+    transition: var(--transition-fast);
 }
 
 .project-link:hover {
     text-decoration: underline;
+}
+
+.project-link:hover::after {
+    transform: translateX(3px);
+}
+
+/* 学习笔记与思考区域 */
+.learning-notes {
+    padding: var(--space-xl) 0;
+    margin-top: var(--space-lg);
+}
+
+.learning-notes .section-title {
+    font-size: 2rem;
+}
+
+/* 个人项目实验区域 */
+.side-projects {
+    padding: var(--space-xl) 0;
+    margin-top: var(--space-lg);
+}
+
+.side-projects .section-title {
+    font-size: 2rem;
 }
 
 /* AIGC工具区 */
@@ -559,4 +592,128 @@
         width: 90%;
         max-width: none;
     }
+}
+
+/* 研究页面Hero区域 */
+.research-hero {
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(255, 55, 95, 0.05));
+    padding: var(--space-xxl) 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #0066FF, #FF375F);
+    color: white;
+    border-radius: 100px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: var(--space-md);
+}
+
+.badge-text {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+    background: linear-gradient(135deg, #0066FF, #FF375F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.125rem;
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-xl);
+    line-height: 1.6;
+}
+
+.research-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.research-stats .stat-item {
+    text-align: center;
+}
+
+.research-stats .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+}
+
+.research-stats .stat-label {
+    font-size: 0.875rem;
+    color: var(--color-gray-500);
+    font-weight: 500;
+}
+
+/* 核心研究和实验性项目区域 */
+.core-research,
+.experimental-projects,
+.continuous-learning {
+    padding: var(--space-xxl) 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.section-header .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+    color: var(--color-text);
+}
+
+.section-header .section-description {
+    font-size: 1.125rem;
+    color: var(--color-gray-600);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-xl);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+/* 实验性项目背景色 */
+.experimental-projects {
+    background: rgba(0, 102, 255, 0.02);
+}
+
+/* 持续学习区域 */
+.continuous-learning {
+    background: rgba(255, 55, 95, 0.02);
 } 
