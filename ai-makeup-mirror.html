@@ -54,10 +54,19 @@
         <section class="project-image">
             <div class="container">
                 <div class="image-container">
-                    <img src="image/0-AI测脸报告首页方案.png" alt="AI智能化妆镜主页方案设计" class="main-image">
+                    <img src="image/0-AI测脸报告首页方案.png" alt="AI智能化妆镜主页方案设计" class="main-image" id="mainImage">
                 </div>
             </div>
         </section>
+
+        <!-- 图片放大查看模态框 -->
+        <div class="image-modal" id="imageModal">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <img src="" alt="" class="modal-image" id="modalImage">
+            <div class="zoom-controls">
+                双击放大 | 滚轮缩放 | ESC键关闭
+            </div>
+        </div>
 
         <!-- 返回按钮 -->
         <section class="project-navigation">
@@ -97,5 +106,93 @@
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script>
+        // 图片放大查看功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainImage = document.getElementById('mainImage');
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalClose = document.getElementById('modalClose');
+            
+            let currentScale = 1;
+            let isDragging = false;
+            let startX, startY, translateX = 0, translateY = 0;
+
+            // 双击图片打开模态框
+            mainImage.addEventListener('dblclick', function() {
+                imageModal.classList.add('active');
+                modalImage.src = this.src;
+                modalImage.alt = this.alt;
+                currentScale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateImageTransform();
+                document.body.style.overflow = 'hidden';
+            });
+
+            // 关闭模态框
+            function closeModal() {
+                imageModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            modalClose.addEventListener('click', closeModal);
+            
+            // 点击背景关闭模态框
+            imageModal.addEventListener('click', function(e) {
+                if (e.target === imageModal) {
+                    closeModal();
+                }
+            });
+
+            // ESC键关闭模态框
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && imageModal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+
+            // 滚轮缩放功能
+            modalImage.addEventListener('wheel', function(e) {
+                e.preventDefault();
+                const delta = e.deltaY > 0 ? 0.9 : 1.1;
+                currentScale *= delta;
+                currentScale = Math.max(0.5, Math.min(currentScale, 5)); // 限制缩放范围
+                updateImageTransform();
+            });
+
+            // 拖拽功能
+            modalImage.addEventListener('mousedown', function(e) {
+                isDragging = true;
+                startX = e.clientX - translateX;
+                startY = e.clientY - translateY;
+                modalImage.style.cursor = 'grabbing';
+            });
+
+            document.addEventListener('mousemove', function(e) {
+                if (!isDragging) return;
+                translateX = e.clientX - startX;
+                translateY = e.clientY - startY;
+                updateImageTransform();
+            });
+
+            document.addEventListener('mouseup', function() {
+                isDragging = false;
+                modalImage.style.cursor = 'grab';
+            });
+
+            // 双击模态框图片重置缩放
+            modalImage.addEventListener('dblclick', function() {
+                currentScale = 1;
+                translateX = 0;
+                translateY = 0;
+                updateImageTransform();
+            });
+
+            function updateImageTransform() {
+                modalImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentScale})`;
+            }
+        });
+    </script>
 </body>
 </html>

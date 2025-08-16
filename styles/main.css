@@ -231,6 +231,34 @@ img, svg {
     margin-right: 0.75rem;
 }
 
+/* 主导航栏样式 */
+.main-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
 .main-nav ul {
     display: flex;
     gap: 2rem;
@@ -239,6 +267,8 @@ img, svg {
 .main-nav a {
     font-weight: 500;
     position: relative;
+    color: var(--color-text);
+    text-decoration: none;
 }
 
 .main-nav a::after {
@@ -628,8 +658,8 @@ img, svg {
         grid-template-columns: 1fr;
     }
     
-    .main-nav {
-        display: none;
+    .nav-links {
+        display: none; /* 在移动端隐藏导航链接，而不是整个导航 */
     }
 }
 

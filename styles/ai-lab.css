@@ -628,10 +628,7 @@
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: var(--space-md);
-    background: linear-gradient(135deg, #0066FF, #FF375F);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #000000; /* 改为黑色 */
     line-height: 1.2;
 }
 
@@ -938,7 +935,7 @@
 
 .core-philosophy {
     padding: var(--space-xl) 0;
-    margin-top: var(--space-xxl); /* 与上方内容拉开更大距离 */
+    margin-top: calc(var(--space-xxl) + var(--space-lg)); /* 进一步增加与上方内容的距离 */
     margin-bottom: var(--space-lg); /* 与下方section拉开距离 */
 }
 
