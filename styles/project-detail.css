@@ -540,6 +540,16 @@ body {
     }
 }
 
+/* 返回按钮样式 */
+.back-button {
+    margin-bottom: var(--space-lg);
+}
+
+.back-button .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
 /* 项目图片展示样式 */
 .project-image {
     padding: var(--space-xl) 0;

@@ -227,6 +227,13 @@ img, svg {
     font-size: 1.25rem;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo svg {
     margin-right: 0.75rem;
 }
@@ -247,8 +254,13 @@ img, svg {
 
 .nav-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* 将内容对齐到右侧 */
     align-items: center;
+    gap: 2rem; /* logo和导航之间的间距 */
+}
+
+.logo {
+    margin-right: auto; /* logo推到最左边 */
 }
 
 .nav-links {

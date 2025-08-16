@@ -12,27 +12,30 @@
     <meta name="description" content="核心作品集 - 体系化构建、交互与体验设计、AI驱动的设计探索的专业案例">
 </head>
 <body>
-    <header class="site-header">
+    <!-- 导航栏 -->
+    <nav class="main-nav">
         <div class="container">
-            <div class="logo">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" rx="10" fill="#000"/>
-                    <path d="M10 20C10 14.4772 14.4772 10 20 10C25.5228 10 30 14.4772 30 20C30 25.5228 25.5228 30 20 30" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M20 20L26 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-                    <circle cx="20" cy="20" r="2" fill="#FF375F"/>
-                </svg>
-                <span>YoyooAI</span>
-            </div>
-            <nav class="main-nav">
-                <ul>
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="10" fill="#000"/>
+                            <path d="M10 20C10 14.4772 14.4772 10 20 10C25.5228 10 30 14.4772 30 20C30 25.5228 25.5228 30 20 30" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 20L26 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="20" cy="20" r="2" fill="#FF375F"/>
+                        </svg>
+                        <span>YoyooAI</span>
+                    </a>
+                </div>
+                <ul class="nav-links">
                     <li><a href="index.html">START</a></li>
                     <li><a href="portfolio.html" class="active">价值创造</a></li>
                     <li><a href="research.html">灵感实验室</a></li>
                     <li><a href="about.html">关于玩家</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <main>
         <!-- 页面标题区域 -->
@@ -63,9 +66,9 @@
                     <div class="portfolio-item" data-category="systematic">
                         <div class="portfolio-thumbnail">
                             <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" rx="8" fill="#f0f0f0" />
+                                <rect width="400" height="300" rx="8" fill="#f8f9fa" />
                                 <!-- 用户场景构建可视化 -->
-                                <rect x="60" y="50" width="280" height="200" rx="8" stroke="#0066FF" stroke-width="2" fill="white" />
+                                <rect x="60" y="50" width="280" height="200" rx="8" stroke="#0066FF" stroke-width="2" fill="#ffffff" />
                                 <!-- AI辅助洞察 -->
                                 <circle cx="120" cy="100" r="25" stroke="#FF375F" stroke-width="2" fill="#FF375F" fill-opacity="0.1" />
                                 <text x="120" y="105" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">AI洞察</text>
@@ -94,7 +97,46 @@
                         </div>
                         <div class="portfolio-info">
                             <h3>用户场景构建</h3>
-                            <p>运用AI辅助分析用户行为数据，结合深度用户研究，构建完整的信息架构和用户场景体系，为产品设计提供科学依据</p>
+                            <p>运用AI辅助分析用户行为数据，结合深度用户研究，构建完整的信息架构和用户场景体系</p>
+                        </div>
+                    </div>
+
+                    <!-- 体系化构建项目2 - OmniVoice语音技能交互研究 -->
+                    <div class="portfolio-item" data-category="systematic">
+                        <div class="portfolio-thumbnail">
+                            <div class="project-status-overlay ongoing">进行中</div>
+                            <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" rx="8" fill="#f8f9fa" />
+                                <!-- 语音交互研究可视化 -->
+                                <rect x="60" y="50" width="280" height="200" rx="8" stroke="#0066FF" stroke-width="2" fill="#ffffff" />
+                                <!-- 语音波形 -->
+                                <path d="M80 150 Q100 130 120 150 T160 150" stroke="#FF375F" stroke-width="3" fill="none" />
+                                <path d="M180 150 Q200 170 220 150 T260 150" stroke="#FF375F" stroke-width="3" fill="none" />
+                                <path d="M280 150 Q300 130 320 150" stroke="#FF375F" stroke-width="3" fill="none" />
+                                <!-- 交互技能标签 -->
+                                <rect x="80" y="80" width="60" height="25" rx="4" fill="#0066FF" fill-opacity="0.2" stroke="#0066FF" stroke-width="1" />
+                                <text x="110" y="96" font-family="Arial" font-size="7" text-anchor="middle" fill="#333">语音识别</text>
+                                <rect x="160" y="80" width="60" height="25" rx="4" fill="#32D74B" fill-opacity="0.2" stroke="#32D74B" stroke-width="1" />
+                                <text x="190" y="96" font-family="Arial" font-size="7" text-anchor="middle" fill="#333">意图理解</text>
+                                <rect x="240" y="80" width="60" height="25" rx="4" fill="#FFD700" fill-opacity="0.2" stroke="#FFD700" stroke-width="1" />
+                                <text x="270" y="96" font-family="Arial" font-size="7" text-anchor="middle" fill="#333">技能调用</text>
+                                <!-- 研究成果 -->
+                                <rect x="80" y="180" width="240" height="30" rx="4" fill="#E8F4FD" stroke="#0066FF" stroke-width="1" />
+                                <text x="200" y="200" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">语音技能交互体系构建</text>
+                                <text x="200" y="270" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">OmniVoice平台研究</text>
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-categories">
+                                    <span class="category">语音交互</span>
+                                    <span class="category">技能设计</span>
+                                    <span class="category">体系化构建</span>
+                                </div>
+                                <a href="https://www.omnivoice.top/" target="_blank" class="portfolio-btn">访问项目</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>OmniVoice语音技能交互研究</h3>
+                            <p>深入研究语音交互技能的设计模式与实现机制，构建完整的语音技能交互体系</p>
                         </div>
                     </div>
                     
@@ -102,7 +144,7 @@
                     <div class="portfolio-item" data-category="interaction">
                         <div class="portfolio-thumbnail">
                             <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" rx="8" fill="#f0f0f0" />
+                                <rect width="400" height="300" rx="8" fill="#f8f9fa" />
                                 <!-- 智慧屏界面 -->
                                 <rect x="80" y="60" width="240" height="150" rx="12" stroke="#000" stroke-width="2" fill="white" />
                                 <!-- 多模态交互元素 -->
@@ -127,7 +169,7 @@
                         </div>
                         <div class="portfolio-info">
                             <h3>智慧家居中控屏交互设计</h3>
-                            <p>设计统一的多模态交互界面，整合语音、触控、手势等交互方式，提升智能家居控制体验的效率和自然度</p>
+                            <p>设计统一的多模态交互界面，整合语音、触控、手势等交互方式，提升智能家居控制体验</p>
                         </div>
                     </div>
                     
@@ -135,7 +177,7 @@
                     <div class="portfolio-item" data-category="interaction">
                         <div class="portfolio-thumbnail">
                             <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" rx="8" fill="#f0f0f0" />
+                                <rect width="400" height="300" rx="8" fill="#f8f9fa" />
                                 <!-- 化妆镜界面 -->
                                 <ellipse cx="200" cy="120" rx="80" ry="60" stroke="#000" stroke-width="2" fill="white" />
                                 <!-- AI识别区域 -->
@@ -166,7 +208,7 @@
                         </div>
                         <div class="portfolio-info">
                             <h3>AI智能化妆镜主页方案设计</h3>
-                            <p>结合AI图像识别和AIGC技术，设计个性化妆容推荐系统，通过动效设计提升虚拟试妆的真实感和交互体验</p>
+                            <p>结合AI图像识别和AIGC技术，设计个性化妆容推荐系统，提升虚拟试妆体验</p>
                         </div>
                     </div>
                     
@@ -174,7 +216,7 @@
                     <div class="portfolio-item" data-category="interaction">
                         <div class="portfolio-thumbnail">
                             <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" rx="8" fill="#f0f0f0" />
+                                <rect width="400" height="300" rx="8" fill="#f8f9fa" />
                                 <!-- 手机界面 -->
                                 <rect x="140" y="40" width="120" height="200" rx="12" stroke="#000" stroke-width="2" fill="white" />
                                 <!-- 社交元素 -->
@@ -187,7 +229,7 @@
                                 <!-- 健身数据可视化 -->
                                 <rect x="150" y="110" width="100" height="60" rx="4" fill="#f5f5f7" stroke="#E5E5E7" stroke-width="1" />
                                 <!-- 进度条 -->
-                                <rect x="160" y="130" width="80" height="6" rx="3" fill="#f0f0f0" />
+                                <rect x="160" y="130" width="80" height="6" rx="3" fill="#f8f9fa" />
                                 <rect x="160" y="130" width="60" height="6" rx="3" fill="#32D74B" />
                                 <!-- 社交激励 -->
                                 <rect x="160" y="145" width="20" height="15" rx="2" fill="#FFD700" />
@@ -205,7 +247,7 @@
                         </div>
                         <div class="portfolio-info">
                             <h3>海外健身社交App</h3>
-                            <p>为海外用户设计社交化健身体验，通过游戏化勋章和社交激励机制，有效提升用户粘性和运动坚持度</p>
+                            <p>为海外用户设计社交化健身体验，通过游戏化勋章和社交激励机制，提升用户运动坚持度</p>
                         </div>
                     </div>
                     
@@ -213,7 +255,7 @@
                     <div class="portfolio-item" data-category="interaction">
                         <div class="portfolio-thumbnail">
                             <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" rx="8" fill="#f0f0f0" />
+                                <rect width="400" height="300" rx="8" fill="#f8f9fa" />
                                 <!-- 家居App界面优化前后对比 -->
                                 <rect x="60" y="60" width="120" height="160" rx="8" stroke="#E5E5E7" stroke-width="2" fill="white" />
                                 <text x="120" y="50" font-family="Arial" font-size="10" text-anchor="middle" fill="#666">优化前</text>
@@ -246,7 +288,7 @@
                         </div>
                         <div class="portfolio-info">
                             <h3>家居生活App体验优化</h3>
-                            <p>重新设计家居控制App的信息架构，从功能堆砌转向场景化设计，显著提升用户操作效率和使用满意度</p>
+                            <p>重新设计家居控制App的信息架构，从功能堆砌转向场景化设计，提升用户操作效率</p>
                         </div>
                     </div>
                     
@@ -254,7 +296,7 @@
                     <div class="portfolio-item" data-category="ai-exploration">
                         <div class="portfolio-thumbnail">
                             <svg width="100%" height="100%" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" rx="8" fill="#f0f0f0" />
+                                <rect width="400" height="300" rx="8" fill="#f8f9fa" />
                                 <!-- AI工作流四个阶段 -->
                                 <rect x="30" y="60" width="80" height="50" rx="6" fill="#0066FF" fill-opacity="0.1" stroke="#0066FF" stroke-width="2" />
                                 <text x="70" y="80" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">研究阶段</text>
@@ -300,7 +342,7 @@
                         </div>
                         <div class="portfolio-info">
                             <h3>AI赋能设计工作流的实践</h3>
-                            <p>从研究阶段的知识库构建，到概念阶段的AI创意生成，再到工具阶段的效率提升，全面探索AI在设计工作流中的应用潜力</p>
+                            <p>从研究阶段的知识库构建，到概念阶段的AI创意生成，全面探索AI在设计工作流中的应用</p>
                         </div>
                     </div>
                     

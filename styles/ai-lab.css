@@ -649,22 +649,7 @@
     margin-right: auto;
 }
 
-.research-stats .stat-item {
-    text-align: center;
-}
-
-.research-stats .stat-number {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--color-primary);
-    margin-bottom: 0.25rem;
-}
-
-.research-stats .stat-label {
-    font-size: 0.875rem;
-    color: var(--color-gray-500);
-    font-weight: 500;
-}
+/* 移除重复的研究页面统计样式，使用portfolio.css中的统一样式 */
 
 /* 核心研究和实验性项目区域 */
 .core-research,
@@ -942,6 +927,7 @@
 .career-journey {
     padding: var(--space-xl) 0; /* 新增设计经验section样式 */
     margin-top: var(--space-xxl);
+    margin-bottom: var(--space-xxl); /* 增加下方间距 */
 }
 
 /* 统一卡片标题大小 */

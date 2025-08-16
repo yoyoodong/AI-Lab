@@ -12,35 +12,40 @@
     <meta name="description" content="我的研究与探索 - 我相信，最好的成长发生在持续学习与动手实践之中">
 </head>
 <body>
-    <header class="site-header">
+    <!-- 导航栏 -->
+    <nav class="main-nav">
         <div class="container">
-            <div class="logo">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" rx="10" fill="#000"/>
-                    <path d="M10 20C10 14.4772 14.4772 10 20 10C25.5228 10 30 14.4772 30 20C30 25.5228 25.5228 30 20 30" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M20 20L26 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-                    <circle cx="20" cy="20" r="2" fill="#FF375F"/>
-                </svg>
-                <span>YoyooAI</span>
-            </div>
-            <nav class="main-nav">
-                <ul>
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="10" fill="#000"/>
+                            <path d="M10 20C10 14.4772 14.4772 10 20 10C25.5228 10 30 14.4772 30 20C30 25.5228 25.5228 30 20 30" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 20L26 14" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="20" cy="20" r="2" fill="#FF375F"/>
+                        </svg>
+                        <span>YoyooAI</span>
+                    </a>
+                </div>
+                <ul class="nav-links">
                     <li><a href="index.html">START</a></li>
                     <li><a href="portfolio.html">价值创造</a></li>
                     <li><a href="research.html" class="active">灵感实验室</a></li>
                     <li><a href="about.html">关于玩家</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <main>
         <!-- 页面Hero区域 -->
-        <section class="research-hero">
+        <section class="about-hero">
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title">研究 <span class="x-symbol">×</span> 探索</h1>
-                    <p class="hero-subtitle">从AI辅助设计到VUI设计规范，每一个项目都是由我的好奇心所驱动的一次探索。我享受将一个模糊的概念，亲手打磨成一个可用的工具或清晰的规范。</p>
+                    <p class="hero-subtitle">从AI辅助设计到VUI设计规范，每一个项目都是好奇心驱动的一次探索。享受将一个模糊的概念，亲手打磨成一个可用的工具或清晰的规范。</p>
+                    
+
                 </div>
             </div>
         </section>
@@ -60,9 +65,9 @@
                                 <path d="M18 30 Q 24 26, 30 30" stroke="#FF375F" stroke-width="2" fill="none" />
                             </svg>
                         </div>
-                        <h3>VUI设计规范研究</h3>
-                        <p>构建OmniVoice智能语音交互规范平台，整合分散的VUI设计资源，为设计师提供一站式查询工具，推动行业标准化发展。</p>
-                        <a href="https://www.omnivoice.top" target="_blank" class="research-link">访问平台</a>
+                        <h3>VUI设计规范资源平台</h3>
+                        <p>整合分散的VUI设计规范资源，为设计师提供一站式查询工具。</p>
+                        <a href="https://vuiapp.top/" target="_blank" class="research-link">访问平台</a>
                     </div>
 
                     <div class="research-card">
@@ -76,8 +81,8 @@
                                 <path d="M12 12L20 16L28 12L36 16" stroke="#0066FF" stroke-width="2" fill="none" />
                             </svg>
                         </div>
-                        <h3>智慧家居竞品洞察</h3>
-                        <p>深度分析智能家居市场主流竞品，识别"专业消费级"等关键机会点，为产品战略规划提供数据驱动的洞察支持。</p>
+                        <h3>智慧家居竞品分析</h3>
+                        <p>深度分析智能家居市场主流竞品，识别关键机会点，为产品规划提供洞察支持。</p>
                         <a href="https://www.smarthomeanalysis.top/" target="_blank" class="research-link">查看报告</a>
                     </div>
 
@@ -93,8 +98,8 @@
                                 <path d="M16 35L32 35" stroke="#32D74B" stroke-width="2" />
                             </svg>
                         </div>
-                        <h3>UX工具平台开发</h3>
-                        <p>打造场景卡片创建平台，支持用户画像、用户旅程等多种模板，提供拖拽式编辑器和团队协作功能，提升设计效率。</p>
+                        <h3>场景卡片构建工具</h3>
+                        <p>打造场景卡片创建平台，选择标签，随意组合激发有趣的场景思路。</p>
                         <a href="https://www.scenecraft.top/" target="_blank" class="research-link">使用工具</a>
                     </div>
                 </div>
@@ -176,10 +181,10 @@
             </div>
         </section>
 
-        <!-- 技术趋势洞察与设计思考记录 -->
+        <!-- 趋势洞察与设计思考 -->
         <section class="insights-section">
             <div class="container">
-                <h2 class="section-title">技术趋势洞察与设计思考记录</h2>
+                <h2 class="section-title">趋势洞察与设计思考</h2>
                 <div class="insights-list">
                     <article class="insight-item">
                         <div class="insight-meta">
