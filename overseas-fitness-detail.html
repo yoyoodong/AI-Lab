@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海外健身社交App - YoyooAI</title>
+    <meta name="description" content="海外健身社交App详情 - 复杂业务逻辑优化能力展示">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/project-detail.css">
+</head>
+<body>
+    <main class="main-content">
+        <!-- 导航栏 -->
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <a href="index.html">YoyooAI</a>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">START</a></li>
+                        <li><a href="portfolio.html">价值创造</a></li>
+                        <li><a href="research.html">灵感实验室</a></li>
+                        <li><a href="about.html">关于玩家</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 项目详情页头部 -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="back-button">
+                        <a href="portfolio.html" class="btn outline">← 返回作品集</a>
+                    </div>
+                    <h1 class="project-title">海外健身社交App</h1>
+                    <p class="project-subtitle">针对海外健身市场的社交化训练应用，重构核心训练流程，提升用户粘性和训练效果</p>
+                    <div class="project-tags">
+                        <span class="tag">流程优化</span>
+                        <span class="tag">社交化设计</span>
+                        <span class="tag">用户体验</span>
+                        <span class="tag">移动端设计</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目展示图片画廊 -->
+        <section class="project-gallery">
+            <div class="container">
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- 图片将通过JS动态加载 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 图片轮播模态框 -->
+        <div class="carousel-modal" id="carouselModal">
+            <div class="carousel-header">
+                <span class="carousel-counter" id="carouselCounter">1 / 20</span>
+                <button class="modal-close" id="modalClose">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="prevBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <div class="carousel-image-container">
+                    <img src="" alt="" class="carousel-image" id="carouselImage">
+                </div>
+                <button class="carousel-btn next" id="nextBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <div class="carousel-controls">
+                <div class="zoom-controls">
+                    <button class="zoom-btn" id="zoomOut">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <span class="zoom-level" id="zoomLevel">100%</span>
+                    <button class="zoom-btn" id="zoomIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="carousel-tips">
+                    左右箭头切换 | 拖拽滑动切换 | 双击重置缩放 | ESC键关闭
+                </div>
+            </div>
+            <div class="carousel-thumbnails" id="carouselThumbnails">
+                <!-- 缩略图将通过JS动态加载 -->
+            </div>
+        </div>
+
+        <!-- 返回按钮 -->
+        <section class="project-navigation">
+            <div class="container">
+                <div class="nav-buttons">
+                    <a href="portfolio.html" class="btn outline">← 返回作品集</a>
+                    <a href="home-living-detail.html" class="btn primary">查看家居生活App →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo">YoyooAI</div>
+                    <p>体验设计 × AI - 以AI驱动设计洞察与创意表达</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="index.html">START</a>
+                        <a href="portfolio.html">价值创造</a>
+                        <a href="research.html">灵感实验室</a>
+                        <a href="about.html">关于玩家</a>
+                    </div>
+                    <div class="footer-contact">
+                        <a href="mailto:327295105@qq.com">327295105@qq.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 YoyooAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        // 海外健身社交App图片数据
+        const images = [];
+        for (let i = 0; i < 20; i++) {
+            images.push({
+                src: `image/海外健身社交/海外健身社交-images-${i}.jpg`,
+                alt: `海外健身社交App设计图 ${i + 1}`
+            });
+        }
+
+        let currentImageIndex = 0;
+        let currentScale = 1;
+        let isDragging = false;
+        let startX, startY, translateX = 0, translateY = 0;
+
+        // 初始化画廊
+        function initGallery() {
+            const galleryGrid = document.getElementById('galleryGrid');
+            images.forEach((image, index) => {
+                const imageItem = document.createElement('div');
+                imageItem.className = 'gallery-item';
+                imageItem.innerHTML = `
+                    <img src="${image.src}" alt="${image.alt}" data-index="${index}">
+                    <div class="image-overlay">
+                        <span class="image-number">${index + 1}</span>
+                        <span class="image-hint">双击查看大图</span>
+                    </div>
+                `;
+                galleryGrid.appendChild(imageItem);
+
+                // 添加双击事件到整个图片容器
+                imageItem.addEventListener('dblclick', function() {
+                    openCarousel(index);
+                });
+            });
+        }
+
+        // 初始化轮播缩略图
+        function initCarouselThumbnails() {
+            const thumbnailsContainer = document.getElementById('carouselThumbnails');
+            images.forEach((image, index) => {
+                const thumb = document.createElement('div');
+                thumb.className = 'carousel-thumbnail';
+                thumb.innerHTML = `<img src="${image.src}" alt="${image.alt}" data-index="${index}">`;
+                thumb.addEventListener('click', () => goToImage(index));
+                thumbnailsContainer.appendChild(thumb);
+            });
+        }
+
+        // 打开轮播模态框
+        function openCarousel(index) {
+            currentImageIndex = index;
+            const modal = document.getElementById('carouselModal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            updateCarouselImage();
+            updateThumbnailActive();
+        }
+
+        // 关闭轮播模态框
+        function closeCarousel() {
+            const modal = document.getElementById('carouselModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            resetImageTransform();
+        }
+
+        // 更新轮播图片
+        function updateCarouselImage() {
+            const image = document.getElementById('carouselImage');
+            const counter = document.getElementById('carouselCounter');
+            
+            image.src = images[currentImageIndex].src;
+            image.alt = images[currentImageIndex].alt;
+            counter.textContent = `${currentImageIndex + 1} / ${images.length}`;
+            
+            resetImageTransform();
+        }
+
+        // 更新缩略图激活状态
+        function updateThumbnailActive() {
+            const thumbnails = document.querySelectorAll('.carousel-thumbnail');
+            thumbnails.forEach((thumb, index) => {
+                thumb.classList.toggle('active', index === currentImageIndex);
+            });
+        }
+
+        // 跳转到指定图片
+        function goToImage(index) {
+            currentImageIndex = index;
+            updateCarouselImage();
+            updateThumbnailActive();
+        }
+
+        // 上一张图片
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            updateCarouselImage();
+            updateThumbnailActive();
+        }
+
+        // 下一张图片
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            updateCarouselImage();
+            updateThumbnailActive();
+        }
+
+        // 重置图片变换
+        function resetImageTransform() {
+            currentScale = 1;
+            translateX = 0;
+            translateY = 0;
+            updateImageTransform();
+            updateZoomLevel();
+        }
+
+        // 更新图片变换
+        function updateImageTransform() {
+            const image = document.getElementById('carouselImage');
+            image.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentScale})`;
+        }
+
+        // 更新缩放级别显示
+        function updateZoomLevel() {
+            const zoomLevel = document.getElementById('zoomLevel');
+            zoomLevel.textContent = `${Math.round(currentScale * 100)}%`;
+        }
+
+        // 放大
+        function zoomIn() {
+            currentScale = Math.min(currentScale * 1.2, 5);
+            updateImageTransform();
+            updateZoomLevel();
+        }
+
+        // 缩小
+        function zoomOut() {
+            currentScale = Math.max(currentScale / 1.2, 0.2);
+            updateImageTransform();
+            updateZoomLevel();
+        }
+
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            initGallery();
+            initCarouselThumbnails();
+
+            // 事件监听器
+            document.getElementById('modalClose').addEventListener('click', closeCarousel);
+            document.getElementById('prevBtn').addEventListener('click', prevImage);
+            document.getElementById('nextBtn').addEventListener('click', nextImage);
+            document.getElementById('zoomIn').addEventListener('click', zoomIn);
+            document.getElementById('zoomOut').addEventListener('click', zoomOut);
+
+            // 键盘事件
+            document.addEventListener('keydown', function(e) {
+                if (!document.getElementById('carouselModal').classList.contains('active')) return;
+                
+                switch(e.key) {
+                    case 'Escape':
+                        closeCarousel();
+                        break;
+                    case 'ArrowLeft':
+                        prevImage();
+                        break;
+                    case 'ArrowRight':
+                        nextImage();
+                        break;
+                }
+            });
+
+            // 点击背景关闭
+            document.getElementById('carouselModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeCarousel();
+                }
+            });
+
+            // 图片拖拽和缩放
+            const carouselImage = document.getElementById('carouselImage');
+            let dragStartX = 0;
+            let dragStartTime = 0;
+            let isDraggingImage = false;
+            
+            // 滚轮缩放
+            carouselImage.addEventListener('wheel', function(e) {
+                e.preventDefault();
+                const delta = e.deltaY > 0 ? 0.9 : 1.1;
+                currentScale = Math.max(0.2, Math.min(currentScale * delta, 5));
+                updateImageTransform();
+                updateZoomLevel();
+            });
+
+            // 双击重置
+            carouselImage.addEventListener('dblclick', resetImageTransform);
+
+            // 图片拖拽功能（支持缩放时移动和正常状态下左右滑动切换）
+            carouselImage.addEventListener('mousedown', function(e) {
+                isDraggingImage = true;
+                dragStartX = e.clientX;
+                dragStartTime = Date.now();
+                
+                if (currentScale > 1) {
+                    // 缩放状态下，用于移动图片
+                    startX = e.clientX - translateX;
+                    startY = e.clientY - translateY;
+                    carouselImage.style.cursor = 'grabbing';
+                } else {
+                    // 正常状态下，准备左右滑动切换图片
+                    carouselImage.style.cursor = 'grabbing';
+                }
+            });
+
+            document.addEventListener('mousemove', function(e) {
+                if (!isDraggingImage) return;
+                
+                if (currentScale > 1) {
+                    // 缩放状态下移动图片
+                    translateX = e.clientX - startX;
+                    translateY = e.clientY - startY;
+                    updateImageTransform();
+                }
+            });
+
+            document.addEventListener('mouseup', function(e) {
+                if (!isDraggingImage) return;
+                
+                const dragDistance = e.clientX - dragStartX;
+                const dragTime = Date.now() - dragStartTime;
+                
+                if (currentScale <= 1 && Math.abs(dragDistance) > 50 && dragTime < 500) {
+                    // 正常状态下的左右滑动切换
+                    if (dragDistance > 0) {
+                        prevImage(); // 向右拖拽，显示上一张
+                    } else {
+                        nextImage(); // 向左拖拽，显示下一张
+                    }
+                }
+                
+                isDraggingImage = false;
+                carouselImage.style.cursor = currentScale > 1 ? 'grab' : 'default';
+            });
+        });
+    </script>
+</body>
+</html>
