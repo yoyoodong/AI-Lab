@@ -163,7 +163,7 @@
 }
 
 .portfolio-info {
-    padding: var(--space-md) var(--space-md) var(--space-md) calc(var(--space-md) + 0.5rem);
+    padding: var(--space-md) calc(var(--space-md) * 0.5) var(--space-md) calc(var(--space-md) * 0.5);
     background-color: var(--color-light);
 }
 

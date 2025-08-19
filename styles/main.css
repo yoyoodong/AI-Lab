@@ -366,12 +366,13 @@ img, svg {
     background-color: var(--color-light);
     border-radius: var(--border-radius-lg);
     padding: var(--space-md);
-    box-shadow: var(--box-shadow-sm);
+    box-shadow: none; /* 默认无投影 */
     transition: var(--transition-normal);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     box-shadow: var(--box-shadow-md);
 }
 
@@ -392,7 +393,7 @@ img, svg {
 }
 
 .feature-card-link:hover .feature-card {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     box-shadow: var(--box-shadow-md);
 }
 
@@ -434,6 +435,13 @@ img, svg {
     gap: var(--space-md);
 }
 
+/* 项目卡片链接样式 */
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .project-card {
     border-radius: var(--border-radius-lg);
     overflow: hidden;
@@ -459,7 +467,7 @@ img, svg {
 }
 
 .project-info {
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-sm) calc(var(--space-md) * 0.5);
 }
 
 .project-info h3 {
@@ -513,13 +521,13 @@ img, svg {
 .post-card {
     padding: var(--space-md);
     border-radius: var(--border-radius-lg);
-    box-shadow: var(--box-shadow-sm);
+    box-shadow: none; /* 默认无投影 */
     transition: var(--transition-normal);
-    border: 1px solid var(--color-gray-200);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .post-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     box-shadow: var(--box-shadow-md);
 }
 
