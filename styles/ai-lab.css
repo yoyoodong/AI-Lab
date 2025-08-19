@@ -2,6 +2,21 @@
  * YoyooAI - AI实验室页面样式
  */
 
+/* 进行中标签样式 */
+.project-status-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #FF8C00;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(255, 140, 0, 0.3);
+}
+
 /* 页面头部 */
 .page-header {
     padding: var(--space-xl) 0;
