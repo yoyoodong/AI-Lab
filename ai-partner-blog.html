@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>把AI当成合伙人，不懂代码也能做个小工具 - YoyooAI</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="拿Cursor举例，聊聊怎么让AI帮你干活，从想法到实用工具的完整实践">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                        </svg>
+                        <span>YoyooAI</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">首页</a>
+                    <a href="portfolio.html">作品集</a>
+                    <a href="research.html" class="active">研究与探索</a>
+                    <a href="about.html">关于我</a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 文章头部 -->
+    <header class="article-header">
+        <div class="container">
+            <div class="article-meta">
+                <span class="article-tag">设计思考</span>
+                <span class="article-date">2024年12月30日</span>
+            </div>
+            <h1 class="article-title">把AI当成合伙人，不懂代码也能做个小工具</h1>
+            <p class="article-subtitle">拿Cursor举例，聊聊怎么让AI帮你干活</p>
+        </div>
+    </header>
+
+    <!-- 文章内容 -->
+    <main class="article-content">
+        <div class="container">
+            <article class="blog-article">
+                <div class="article-intro">
+                    <p>大家好。</p>
+                    <p>今天想跟大家分享一个话题：我们这些不太懂代码的普通人，怎么用AI把脑子里的想法变成现实？</p>
+                    <p>很多人一听到"编程"、"代码"，头都大了，觉得那是程序员的专属技能。但现在有了AI这个聪明的"合伙人"，事情变得不一样了。关键不在于你会不会写代码，而在于你会不会"提需求"。</p>
+                    <p>下面，我先用一个自己最近的亲身经历，给你看看AI是怎么帮我解决实际问题的。</p>
+                </div>
+
+                <section class="article-section">
+                    <h2 id="case-study">一个真实案例：从一个想法到一个实用小工具</h2>
+                    
+                    <h3>1. 我遇到了什么麻烦？</h3>
+                    <p>前段时间，我在研究语音交互相关的内容，需要查阅苹果、谷歌、亚马逊等多个平台的官方设计规范。这些资料散落在各个官网上，我不得不在好几个浏览器标签页之间来回切换，不仅费眼睛，思路还总被打断，效率很低。</p>
+
+                    <h3>2. 能不能让AI帮我造个工具？</h3>
+                    <p>我就琢磨，能不能把这些分散的知识点全都整合到一个网页里？这样一来，我自己查阅时就能一目了然，还能把链接分享给团队里同样在研究的小伙伴。这就实现了知识的"一次构建，多人共享，随时更新"。</p>
+
+                    <h3>3. 我是怎么指挥AI的</h3>
+                    <p>我打开了Cursor，开始用大白话指挥它干活：</p>
+
+                    <div class="step-box">
+                        <h4>第一步：启动项目（告诉AI我的想法/目的）</h4>
+                        <p>我直接对它说："我想创建一个网页，用来汇总不同平台的语音交互设计规范，方便查阅。你先帮我搭个最基本的框架。"</p>
+                    </div>
+
+                    <div class="step-box">
+                        <h4>第二步：搭建结构（分步下指令）</h4>
+                        <p>AI马上生成了一个简单的HTML文件。接着我告诉它大概的功能结构：</p>
+                        <ol>
+                            <li>页面需要一个大标题，叫语音交互设计规范助手</li>
+                            <li>按国际平台和国内平台进行一级分类，各分类下以卡片或列表形式展示各个语音平台</li>
+                            <li>点击平台卡片进入该平台的专属规范详情</li>
+                        </ol>
+                        <p>AI迅速更新了代码，网页的骨架一下子就有了。</p>
+                    </div>
+
+                    <div class="step-box">
+                        <h4>第三步：填充内容（让AI做整理工作）</h4>
+                        <p>我从各个平台收集链接，这样比较精准，是自己要跳转的语音规范页面。例如：</p>
+                        <ul class="link-list">
+                            <li><strong>百度 DuerOS:</strong><br>
+                                <a href="https://dueros.baidu.com/didp/doc/dueros-bot-platform/dbp-design/interaction-design_markdown" target="_blank">DuerOS开放平台</a>
+                            </li>
+                            <li><strong>小米小爱同学:</strong><br>
+                                <a href="https://developers.xiaoai.mi.com/documents/Home?type=/api/doc/render_markdown/VoiceserviceAccess/Device/platformguide" target="_blank">小爱开发者平台</a>
+                            </li>
+                        </ul>
+                        <p>接着告诉它：</p>
+                        <ol>
+                            <li><strong>设计规范：</strong>对官方规范中强制性或强烈建议遵循的规则进行中文提炼和总结</li>
+                            <li><strong>设计建议：</strong>对官方提出的最佳实践、推荐做法进行中文解读</li>
+                            <li><strong>设计要点：</strong>总结该平台VUI设计的独特之处、核心原则或需要特别注意的关键点</li>
+                        </ol>
+                        <p>AI立刻按照需求进行网站的内容填充，并且分析整理。</p>
+                    </div>
+
+                    <div class="step-box">
+                        <h4>第四步：优化体验（增加交互功能）</h4>
+                        <p>内容都放进去后，内容有点乱，于是又让他进行国际和国内的分类，以及增加搜索功能。</p>
+                    </div>
+
+                    <h3>4. 结果：不到一小时搞定</h3>
+                    <p>不到半小时，一个清爽、实用的内部知识库网页就做好了。我把它部署后，链接发给同事，大家都能随时访问。以后再有新资料，我只需要花几分钟让AI帮忙加进去就行。这个小工具，实实在在地提升了我们团队的工作效率。</p>
+                </section>
+
+                <section class="article-section">
+                    <h2 id="communication-tips">怎么和AI"说人话"，让它干活又快又好</h2>
+                    <p>看完我的例子，你可能会发现，和AI沟通，不用把它想得太复杂。它就像一个啥都懂、但需要你讲清楚才好干活的朋友。你说话越实在、越具体，它给你的东西就越靠谱。</p>
+
+                    <h3>5. 说清楚你要啥 → 学会「精准提问」</h3>
+                    <p>好多时候，AI给你的东西不对劲，不是它笨，而是咱没说清楚。</p>
+
+                    <div class="comparison-box error">
+                        <h4>❌ 错误示范</h4>
+                        <p>"帮我写个智能家居的控制界面。"</p>
+                        <p class="note">（这太模糊了，AI不知道是控制灯光、窗帘还是空调，也不知道界面长啥样。）</p>
+                    </div>
+
+                    <div class="comparison-box success">
+                        <h4>✅ 正确示范</h4>
+                        <p>"用HTML帮我写一个智能客厅的控制面板。面板上要有三个按钮，分别控制'客厅顶灯'、'电视'和'窗帘'。每个按钮旁边要显示当前设备的状态，比如'开/关'或'打开/关闭'。"</p>
+                    </div>
+
+                    <p>如果你刚入门，连上面这些都不知道怎么说，试试下面这几个更简单的法子：</p>
+
+                    <div class="method-list">
+                        <div class="method-item">
+                            <h4>1. 聊天式描述</h4>
+                            <p>就当和朋友聊天，说说你想要的功能。</p>
+                            <p class="example">比如："我想做个语音控制的功能，当我说'我回家了'，系统就能自动打开客厅的灯，然后把窗帘拉上。"</p>
+                        </div>
+
+                        <div class="method-item">
+                            <h4>2. 打比方</h4>
+                            <p>用生活中常见的东西来形容。</p>
+                            <p class="example">比如："我想要一个像手机遥控器一样的东西，界面上有几个大按钮，按一下开灯，再按一下关灯，简单直接。"</p>
+                        </div>
+
+                        <div class="method-item">
+                            <h4>3. 一步一步来</h4>
+                            <p>把一个大想法拆成小问题，一个一个问。这是最推荐新手用的方法，不知不觉中还能锻炼你分解任务的能力。</p>
+                            <ul>
+                                <li>先问①："怎么创建一个可以触发语音指令的按钮？"</li>
+                                <li>得到代码后，再问②："现在有了按钮，怎么让它在被点击时，模拟执行一个'开灯'的动作？"</li>
+                                <li>最后问③："如果我想同时执行'开灯'和'拉窗帘'两个动作，代码要怎么改？"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="article-section">
+                    <h2 id="templates">万能句式模板 → 用"大白话"描述需求（记下来！）</h2>
+                    <p>这几个句式特别好用，能帮你把想法清晰地表达出来。</p>
+
+                    <div class="template-box">
+                        <h4>句式1：打比方</h4>
+                        <div class="template">
+                            <strong>模板：</strong> "我需要一个类似 [某个常见东西] 的功能，就像 [举个例子] 那样。"
+                        </div>
+                        <div class="example">
+                            <strong>例子：</strong> "我需要一个类似智能音箱设置'场景'的功能，就像在App里点一下'观影模式'，灯光就自动变暗，窗帘也拉上。"
+                        </div>
+                    </div>
+
+                    <div class="template-box">
+                        <h4>句式2：讲明白"做什么"和"得到什么"</h4>
+                        <div class="template">
+                            <strong>模板：</strong> "当用户做了 [某个操作]，系统应该 [发生什么结果]，具体表现是 [描述现象]。"
+                        </div>
+                        <div class="example">
+                            <strong>例子：</strong> "当用户说出'晚安'这个语音指令后，系统应该关闭所有灯光，具体表现是界面上所有灯的图标都变成灰色。"
+                        </div>
+                    </div>
+
+                    <div class="template-box">
+                        <h4>句式3：提前说出你的担心</h4>
+                        <div class="template">
+                            <strong>模板：</strong> "我担心 [可能会出现的问题]，要怎么避免？"
+                        </div>
+                        <div class="example">
+                            <strong>例子：</strong> "我担心语音识别会出错，比如把'开灯'听成'开门'，要怎么增加一个确认环节，比如让系统反问一句'您是说要开灯吗？'"
+                        </div>
+                    </div>
+                </section>
+
+                <section class="article-section">
+                    <h2 id="growth-path">从"小白"到能动手修改的"小能手"</h2>
+                    <p>新手用AI辅助编程，可以试试下面这几步，慢慢地你就不再是"小白"了。</p>
+
+                    <div class="growth-steps">
+                        <div class="growth-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>第一步：大胆说想法</h4>
+                                <p>用最自然的大白话描述你的需求，让AI生成代码，直接运行看看效果。先别管代码看不看得懂，重要的是让想法动起来。</p>
+                            </div>
+                        </div>
+
+                        <div class="growth-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>第二步：从代码里学词儿</h4>
+                                <p>AI给你代码后，你会看到很多"专业术语"（比如 Function, Event Listener）。通过AI的实现，反过来理解这些词是干嘛的，慢慢积累你的"技术词汇库"。</p>
+                            </div>
+                        </div>
+
+                        <div class="growth-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>第三步：学着拆分任务</h4>
+                                <p>开始尝试把一个复杂的需求（比如"构建一个全屋智能场景联动系统"）拆分成几个小任务（"先实现单设备控制"、"再做多设备联动"），然后用你刚学的半专业语言和AI协作。</p>
+                            </div>
+                        </div>
+
+                        <div class="growth-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>第四步：能动手改改</h4>
+                                <p>看得多了，自然就有点感觉了。试着去理解AI生成的代码逻辑，然后自己动手微调一下，比如改个按钮颜色、换个提示文字。当你能熟练地修改AI代码时，你就真正入门了。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="article-conclusion">
+                    <p>最后想说，AI时代，阻碍我们创造的，可能不再是复杂的技术本身，而是我们是否敢于想象，并清晰地表达出来。</p>
+                    <p>希望今天的分享对你有启发。从现在开始，试着把AI当成你的合伙人，去解决一个身边的小问题吧！</p>
+                </section>
+            </article>
+
+            <!-- 返回按钮 -->
+            <div class="article-navigation">
+                <a href="research.html" class="back-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    返回研究与探索
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+                        </svg>
+                        <span>YoyooAI</span>
+                    </div>
+                    <p>以AI驱动设计洞察与创意表达</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="portfolio.html">作品集</a></li>
+                        <li><a href="research.html">研究与探索</a></li>
+                        <li><a href="about.html">关于我</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>邮箱：hello@yoyooai.com</p>
+                    <p>微信：YoyooAI</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 YoyooAI. 持续学习，持续创造。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
