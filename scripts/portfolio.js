@@ -164,31 +164,3 @@ function onScroll() {
 // 添加滚动监听
 window.addEventListener('scroll', onScroll);
 
-/**
- * 显示 COMING SOON 弹窗
- */
-function showComingSoonModal() {
-    const modal = document.getElementById('comingSoonModal');
-    if (modal) {
-        modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
-}
-
-/**
- * 隐藏 COMING SOON 弹窗
- */
-function hideComingSoonModal() {
-    const modal = document.getElementById('comingSoonModal');
-    if (modal) {
-        modal.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-}
-
-// ESC键关闭弹窗
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-        hideComingSoonModal();
-    }
-});

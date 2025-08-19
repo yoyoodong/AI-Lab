@@ -49,12 +49,11 @@
         <!-- 项目图片展示 -->
         <section class="project-image">
             <div class="container">
-                <div class="image-container">
+                <div class="image-container" style="max-width: 960px;">
                     <img src="image/智慧家App原型设计方案.png" 
                          alt="智慧家App原型设计方案" 
                          class="main-image"
-                         style="max-width: 960px; width: 100%; height: auto;"
-                         onclick="openImageModal(this.src)">
+                         style="width: 100%; height: auto;">
                 </div>
             </div>
         </section>
@@ -174,18 +173,8 @@
         </div>
     </footer>
 
-    <!-- 图片放大查看模态框 -->
-    <div class="image-modal" id="imageModal">
-        <div class="modal-image-container">
-            <img src="" alt="" class="modal-image" id="modalImage">
-            <div class="modal-close" onclick="closeImageModal()">×</div>
-            <div class="zoom-controls">
-                滚轮缩放 | 拖拽移动 | 点击关闭
-            </div>
-        </div>
-    </div>
+
 
     <script src="scripts/main.js"></script>
-    <script src="scripts/project-detail.js"></script>
 </body>
 </html>

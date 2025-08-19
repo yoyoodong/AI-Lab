@@ -437,7 +437,7 @@ img, svg {
 .project-card {
     border-radius: var(--border-radius-lg);
     overflow: hidden;
-    box-shadow: var(--box-shadow-sm);
+    box-shadow: none;
     transition: var(--transition-normal);
 }
 

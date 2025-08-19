@@ -88,7 +88,7 @@
 .portfolio-item {
     border-radius: var(--border-radius-lg);
     overflow: hidden;
-    box-shadow: var(--box-shadow-sm);
+    box-shadow: none;
     transition: opacity 0.3s ease-out, transform 0.3s ease-out;
     animation: fadeIn 0.8s ease-out both;
 }
@@ -163,7 +163,7 @@
 }
 
 .portfolio-info {
-    padding: var(--space-md);
+    padding: var(--space-md) var(--space-md) var(--space-md) calc(var(--space-md) + 0.5rem);
     background-color: var(--color-light);
 }
 
