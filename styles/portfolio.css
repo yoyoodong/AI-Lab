@@ -7,6 +7,9 @@
     padding: var(--space-xl) 0;
     text-align: center;
     background: linear-gradient(90deg, rgba(0, 102, 255, 0.05) 0%, rgba(255, 55, 95, 0.05) 100%);
+    min-height: 280px;
+    display: flex;
+    align-items: center;
 }
 
 .page-header h1 {
@@ -263,11 +266,24 @@
     display: block;
 }
 
-/* 关于页面样式 */
+/* 研究页面样式 - 与价值创造页面高度一致 */
 .about-hero {
     padding: var(--space-xl) 0;
     background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, rgba(255, 55, 95, 0.05) 100%);
     text-align: center;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+}
+
+/* 关于页面样式 - 与START页面高度一致 */
+.about-page-hero {
+    padding: var(--space-xl) 0;
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, rgba(255, 55, 95, 0.05) 100%);
+    text-align: center;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
 }
 
 .hero-badge {
@@ -841,4 +857,95 @@
     left: 0;
     color: var(--color-primary);
     font-weight: bold;
+}
+
+/* COMING SOON 弹窗样式 */
+.coming-soon-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-soon-modal.active {
+    display: flex;
+}
+
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    background: #f3f4f6;
+    color: #333;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.coming-soon-icon {
+    margin-bottom: 24px;
+}
+
+.coming-soon-text h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.coming-soon-text p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
 }

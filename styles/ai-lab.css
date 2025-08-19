@@ -7,6 +7,9 @@
     padding: var(--space-xl) 0;
     text-align: center;
     background: linear-gradient(90deg, rgba(0, 102, 255, 0.05) 0%, rgba(255, 55, 95, 0.05) 100%);
+    min-height: 280px;
+    display: flex;
+    align-items: center;
 }
 
 .page-header h1 {
@@ -937,4 +940,92 @@
 .philosophy-card h3,
 .contact-card h3 {
     font-size: 1.125rem !important; /* 统一为更小的字体大小 */
+}
+
+/* 项目状态标签样式 */
+.project-card {
+    position: relative;
+}
+
+.project-status-tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: linear-gradient(135deg, #32D74B, #28C840);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 12px;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(50, 215, 75, 0.2);
+}
+
+/* 兵器库样式 */
+.arsenal-section {
+    padding: var(--space-xl) 0;
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.02) 0%, rgba(245, 158, 11, 0.02) 100%);
+}
+
+.arsenal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.arsenal-card {
+    background: white;
+    padding: var(--space-lg);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--color-gray-200);
+    transition: var(--transition-normal);
+    text-align: center;
+}
+
+.arsenal-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--box-shadow-md);
+    border-color: var(--color-primary);
+}
+
+.arsenal-icon {
+    margin-bottom: var(--space-md);
+    display: flex;
+    justify-content: center;
+}
+
+.arsenal-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--color-dark);
+}
+
+.arsenal-card p {
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-md);
+    line-height: 1.6;
+}
+
+.arsenal-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: var(--transition-normal);
+}
+
+.arsenal-link:hover {
+    color: var(--color-secondary);
+    transform: translateX(2px);
+}
+
+.arsenal-link::after {
+    content: '↗';
+    font-size: 0.8rem;
+    opacity: 0.7;
 } 

@@ -115,6 +115,7 @@ img, svg {
 .section-title {
     margin-bottom: var(--space-lg);
     position: relative;
+    text-align: center;
 }
 
 .section-header {
@@ -303,6 +304,9 @@ img, svg {
     padding: var(--space-xl) 0;
     position: relative;
     overflow: hidden;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
 }
 
 .hero .container {
